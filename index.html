@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard">
+        <div class="score-area">
+          <h1>HOME</h1>
+          <div class="score" id="home-score">0</div>
+          <div class="point-boxes">
+            <div class="points" id="home-one-point" onclick="onePoint()">
+              +1
+            </div>
+            <div class="points" id="home-two-point" onclick="twoPoint()">
+              +2
+            </div>
+            <div class="points" id="home-three-point" onclick="threePoint()">
+              +3
+            </div>
+          </div>
+        </div>
+        <div class="score-area">
+          <h1>AWAY</h1>
+          <div class="score" id="away-score">0</div>
+          <div class="point-boxes">
+            <div class="points" id="away-one-point" onclick="onePointAway()">
+              +1
+            </div>
+            <div class="points" id="away-two-point" onclick="twoPointAway()">
+              +2
+            </div>
+            <div
+              class="points" id="away-three-point" onclick="threePointAway()">
+              +3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-game">
+        <button id="new-game-btn" onclick="newGame()">New Game</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
