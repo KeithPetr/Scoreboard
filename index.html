@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <title>Scoreboard</title>
+  </head>
+  <body>
+    <div class="score-board">
+      <button class="normal-button" id="new-game-btn">New Game</button>
+      <div class="button-area">
+        <div class="champion-side">
+          <h1 class="title">Champion</h1>
+          <div class="score-display" id="champion-display-el">0</div>
+          <div class="score-inputs">
+            <button class="score-btn" id="champion-score-one">0</button>
+            <button class="score-btn" id="champion-score-two">0</button>
+            <button class="score-btn" id="champion-score-three">0</button>
+          </div>
+          <button class="normal-button" id="champion-generate-btn">
+            Generate
+          </button>
+        </div>
+        <div class="challenger-side">
+          <h1 class="title">Challenger</h1>
+          <div class="score-display" id="challenger-display-el">0</div>
+          <div class="score-inputs">
+            <button class="score-btn" id="challenger-score-one">0</button>
+            <button class="score-btn" id="challenger-score-two">0</button>
+            <button class="score-btn" id="challenger-score-three">0</button>
+          </div>
+          <button class="normal-button" id="challenger-generate-btn">
+            Generate
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
